@@ -52,7 +52,7 @@ def call_openai_api(api_key, prompt):
 def call_gemini_api(api_key, prompt):
     """Chama a API do Google Gemini usando requests"""
     try:
-        url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={api_key}'
+        url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}'
         
         data = {
             'contents': [{
